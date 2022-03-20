@@ -24,7 +24,7 @@ const embedCord = async (input_stairs) =>{
             foot.classList.add('myclass');
             document.getElementById('dibba').appendChild(foot);
             mymusic2.play();
-            document.getElementById('opscreen').value = `{x:${cr_x} ; y : ${cr_y}}` ;
+            document.getElementById('opscreen').value = `             {x:${cr_x} ; y : ${cr_y}}` ;
         }
         document.getElementById('dibba').innerHTML ="";
         for(let i = 1  ; i < input_stairs ; i++){
@@ -77,7 +77,7 @@ const getnumber = (x , j1 , j2 , j3) =>{
     jump2 = parseInt(j2);
     jump3 = parseInt(j3);
     y = document.createElement('div');
-    y.setAttribute('style', ` width : 100% ; height : 100% ; background-color : orange ;  display : grid ; grid-template-rows : repeat(${input_stairs} , 1fr ) ; grid-template-columns : repeat(${input_stairs} , 1fr)`);
+    y.setAttribute('style', ` width : 100% ; height : 100% ;  height: 100% ; background-position: center; background-repeat: no-repeat; background-size: fill; ;  display : grid ; grid-template-rows : repeat(${input_stairs} , 1fr ) ; grid-template-columns : repeat(${input_stairs} , 1fr)`);
     y.setAttribute('id' , 'dibba');
     // giving lines to stairs
     for(let i = 1  ; i < input_stairs ; i++){
@@ -97,7 +97,7 @@ const getnumber = (x , j1 , j2 , j3) =>{
 
 //submitting value from Form :
 const submitvalue = () =>{
-    mymusic1.play();
+    mymusic1.play(); 
     x = document.getElementById('myvalue');
     a1 = document.getElementById('myjvalue1');
     a2 = document.getElementById('myjvalue2');
